@@ -1,18 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        let peso = parseInt(prompt("me fale seu peso"));
-        let altura = parseInt(prompt("m fale sua altura"));
-        let imc = peso/(altura*altura);
+        let peso = parseFloat(prompt("me fale seu peso"));
+        let altura = parseFloat(prompt("me fale sua altura"));
+        let imc = peso / (altura * altura);
 
-        if(imc < 17)
+        if (imc < 17) {
+            alert("muito abaixo do peso")
+        } else if (imc >= 17 && imc < 18.5) {
+            alert("abaixo do peso. ")
+        } else if (imc >= 18.5 && imc < 25) {
+            alert("parabéns peso ideal.")
+        } else if (imc >= 25 && imc < 30) {
+            alert("acima do peso.")
+        } else if (imc >= 30 && imc < 35) {
+            alert("obesidade 1.")
+        } else if (imc >= 35 && imc < 40) {
+            alert("obesidade 2 (severa).")
+        } else if (imc >= 40) {
+            alert("obesidade 3 (mórbida).")
+        } if (isNaN(peso) || isNaN(altura) || peso < 0 || altura < 0)
+            alert("Você adicionou um valor não valido.");
 
     </script>
 </body>
+
 </html>
