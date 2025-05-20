@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let numero = parseInt(entrada);
+
+      if (isNaN(numero) || numero < 0) {
+        alert("Por favor, insira um numero inteiro nao negativo");
+      } else {
+        let resultado = 1;
+        for (let contador = 1; contador <= numero; contador++) {
+          resultado = resultado * contador;
+        }
+        alert("O fatorial de " + numero + " é " + resultado);
+      }
+    </script>
+  </body>
+</html>
