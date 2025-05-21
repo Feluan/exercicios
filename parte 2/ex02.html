@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let selecao = parseInt(
+        prompt(
+          "Escolha o codigo do produto que deseja consultar : (escolha entre 1 e 15)"
+        )
+      );
+      let resultado = "";
+
+      if (isNaN(selecao) || selecao < 1 || selecao > 15) {
+        alert("Código inválido. Por favor, digite um número entre 1 e 15.");
+      } else {
+        switch (selecao) {
+          case 2:
+          case 3:
+          case 4:
+            resultado = "perecivel";
+            break;
+
+          case 1:
+            resultado = "não perecivel";
+            break;
+
+          case 5:
+          case 6:
+            resultado = "Vestuário";
+            break;
+
+          case 7:
+            resultado = "Higiene pessoal";
+            break;
+
+          case 8:
+          case 9:
+          case 10:
+          case 11:
+          case 12:
+          case 13:
+          case 14:
+          case 15:
+            resultado = "Limpeza e Utensilios Domesticos";
+            break;
+        }
+        alert(resultado);
+      }
+    </script>
+  </body>
+</html>
+    

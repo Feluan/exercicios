@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let codigo = parseInt(
+        prompt(
+          "Digite o código do item:\n100: Cachorro quente - R$ 1,70 \n101: Bauru Simples - R$ 2,30 \n102: Bauru com ovo - R$ 2,60 \n103: Hambúrguer = R$ 2,40 \n104: Cheeseburguer - R$ 2,50 \n105: Refrigerante - R$ 1,00"
+        )
+      );
+      let quantidade = parseFloat(prompt("Digite a quantidade desejada:"));
+      let precoUnitario = "";
+
+      switch (codigo) {
+        case 100:
+          precoUnitario = 1.70;
+          break;
+        case 101:
+          precoUnitario = 2.30;
+          break;
+        case 102:
+          precoUnitario = 2.60;
+          break;
+        case 103:
+          precoUnitario = 2.40;
+          break;
+        case 104:
+          precoUnitario = 2.50;
+          break;
+        case 105:
+          precoUnitario =   1.00;
+          break;
+        default:
+          alert("Código inválido.");
+          break;
+      }
+      if (precoUnitario !== undefined) {
+        let total = precoUnitario * quantidade;
+        alert("Total a pagar: R$" + total.toFixed(2));
+      }
+    </script>
+  </body>
+</html>

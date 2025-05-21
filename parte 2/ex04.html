@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let pergunta = parseInt(
+            prompt("Digite um numero entre 1 e 7, para saber o dia da semana:")
+        );
+        let resultado = "";
+
+        if (isNaN(pergunta) || pergunta < 1 || pergunta > 7) {
+            alert("Insira um numero valido.");
+        } else {
+            switch (pergunta) {
+                case 1:
+                    resultado = "Domingo";
+                    break;
+                case 2:
+                    resultado = "Segunda-feira";
+                    break;
+                case 3:
+                    resultado = "Terça-feira";
+                    break;
+                case 4:
+                    resultado = "Quarta-feira";
+                    break;
+                case 5:
+                    resultado = "Quinta-feira";
+                    break;
+                case 6:
+                    resultado = "Sexta-feira";
+                    break;
+                case 7:
+                    resultado = "Sábado";
+                    break;
+            }
+        }
+        alert(resultado);
+    </script>
+</body>
+
+</html>
