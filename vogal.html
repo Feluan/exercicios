@@ -3,16 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contar Vogais</title>
+    <title>Documment</title>
   </head>
   <body>
     <script>
-        // variaveis
       function contarVogais(texto) {
         let contador = 0;
         let vogais = "aeiou";
 
-        // laço de repetiçao + incremento
         for (let i = 0; i < texto.length; i++) {
           if (vogais.includes(texto[i])) {
             contador++;
@@ -21,10 +19,10 @@
         return contador;
       }
 
-    //   pergunta e puxar funçao
-      let pergunta = "exemplo de texto";
+      let pergunta = prompt("Digite alguma letra para calcular as vogais.");
       let numeroDeVogais = contarVogais(pergunta);
       alert(`O número de vogais em "${pergunta}" é: ${numeroDeVogais}`);
     </script>
   </body>
 </html>
+<!-- resumindo,percorre cada letra do texto, verifica se é vogal e se for, aumenta a contagem -->
