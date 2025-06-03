@@ -13,19 +13,3 @@ document.getElementById("decrementar").addEventListener("click", function () {
   atualizarContador();
 });
 
-while (true) {
-  let acao = prompt(
-    "Digite '+' para incrementar, ' - ' para decrementar ou 'sair' para encerrar."
-  );
-
-  if (acao === "+") {
-    incrementar();
-  } else if (acao === "-") {
-    decrementar();
-  } else if (acao?.toLocaleLowerCase() === "sair") {
-    break;
-  } else {
-    alert("Opção inválida!");
-  }
-}
-sa
